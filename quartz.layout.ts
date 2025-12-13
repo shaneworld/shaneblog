@@ -22,11 +22,30 @@ const recentNotes = [
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [...recentNotes.map((c) => Component.MobileOnly(c))],
+  afterBody: [
+    ...recentNotes.map((c) => Component.MobileOnly(c)),
+    Component.Comments({
+      provider: 'giscus',
+      options: {
+        // from data-repo
+        repo: 'shaneworld/shaneblog',
+        // from data-repo-id
+        repoId: 'R_kgDOQn1txA',
+        // from data-category
+        category: 'Announcements',
+        // from data-category-id
+        categoryId: 'DIC_kwDOQn1txM4Czup8',
+        // from data-lang
+        lang: 'en',
+        mapping: 'title',
+        inputPosition: 'top'
+      }
+    }),
+  ],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0",
-      Twitter: "https://twitter.com/_jzhao",
+      GitHub: "https://github.com/shaneworld"
+      // Twitter: "https://twitter.com/_jzhao",
     },
   }),
 }
