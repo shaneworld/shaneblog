@@ -12,9 +12,9 @@
     border: 1px var(--lightgray) solid;
     border-radius: 4px;
     font-family: inherit;
-    font-size: 0.8em;
+    font-size: inherit;
     height: 2rem;
-    padding: 0;
+    padding-right: clamp(1em, 3vw, 1.5em);
     display: flex;
     align-items: center;
     text-align: inherit;

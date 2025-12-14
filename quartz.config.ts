@@ -65,9 +65,9 @@ const config: QuartzConfig = {
       Plugin.Latex({ renderEngine: "katex" }),
       Plugin.SyntaxHighlighting(),
       Plugin.ObsidianFlavoredMarkdown({
-        enableInHtmlEmbed: false,
-        parseTags: false,
-        mermaid: false,
+        enableInHtmlEmbed: true,
+        parseTags: true,
+        mermaid: true,
       }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
