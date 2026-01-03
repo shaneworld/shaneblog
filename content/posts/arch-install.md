@@ -1,5 +1,6 @@
 ---
-title: "Arch Linux 安装指北"
+title: "Arch Linux Installation Guide"
+date: "2025.12.14"
 tags:
   - Linux
   - Pastime
